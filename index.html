@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Paper Planes</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="javascript/app.js" charset="utf-8"></script>
+        <script type="module" src="javascript/leaderboard.js" charset="utf-8"></script>
+        <script type="module" src="javascript/database.js"></script>
+    </head>
+    <body>
+        <header>Paper Planes</header>
+        <div class="instructionPrompt"><br>Press "ENTER" to start game<br><br><br><br>Use "SPACE" to jump and manoeuvre<br> through the obstacles</div>
+        <div class="submitScore">
+            <input type="text" name="username">
+            <button>Submit</button>
+        </div>
+        <div class="game-wrapper">
+            <div class="border-left"></div>
+            <div class="border-right"></div>
+            <div class="game-border"></div>
+            <div class="game-container">
+                <div class="border-top"></div>
+                <div class="counter"></div>
+                <div class="sky">
+                    <div class="plane"></div>
+                </div>
+                <div class="ground"></div>
+            </div>
+        </div>
+        <div id="leaderboard" class="leaderboard-container"></div>
+    </body>
+</html>
+
+<!-- <script>
+
+</script>
+
+<script>
+
+</script> -->

@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "pixel";
+    src: url(../fonts/Pixelfy.ttf);
+}
+
+body{
+    display: absolute;
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    position:absolute;
+    left: 90px;
+    top: 100px;
+    text-align: center;
+    height: 50px;
+    font-size: 5pc;
+    font-family: "pixel";
+    color:white;
+    z-index: +3;
+}
+
+.game-container{
+    width: 500px;
+    height: 730px;
+    left:700px;
+    top:50px;
+    position: absolute;
+}
+
+.sky{
+    background-image: url(../images/background.png);
+    width: 500px;
+    height: 580px;
+    position: absolute;
+}
+
+.ground{
+    background-image: url(../images/ground.png);
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: +1;
+}
+
+.plane{
+    background-image: url(../images/plane.png);
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+}
+
+.obstacle{
+    background-image: url(../images/obstacle.png);
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+.topObstacle{
+    background-image: url(../images/obstacleTop.png);
+    width: 60px;
+    height: 360px;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.border-left{
+    width: 130px;/*bilo 80 a left 700*/
+    height: 790px;
+    left: 570px;
+    position: absolute;
+    background-color: black;
+    z-index: +2;
+}
+
+.border-right{
+    width: 130px;
+    height: 790px;
+    left: 1200px;
+    position: absolute;
+    background-color: black;
+    z-index: +2;
+}
+
+.border-top{
+    width: 760px;
+    height: 50px;
+    left: -130px; /*ovde sam stao*/
+    position: absolute;
+    background-color: black;
+    z-index: +2;
+    top: -50px;
+}
+
+.counter{
+    left: 220px;
+    top: 150px;
+    width:60px;
+    height: 45px;
+    position: absolute;
+    background-color: transparent;
+    z-index: +2;
+    color: white;
+    -webkit-text-stroke: 3px black;
+    font-family:'pixel';
+    font-size: 5pc;
+}
+
+.instructionPrompt{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    color:white;
+    z-index: +3;
+    font-family: 'pixel';
+    font-size: 2pc;
+    text-align: center;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 10px;
+    outline-offset: 10px;
+}
+
+.leaderboard-container{
+    overflow: auto;
+    overflow-x: hidden;
+    width: 500px;
+    height: 500px;
+    position:absolute;
+    left: 1300px;
+    top: 280px;
+    z-index: +2;
+    background-color: black;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 10px;
+}
+
+.name{
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 10px;
+    background-color: black;
+    font-family: "pixel";
+    text-align: center;
+    font-size: 2pc;
+}
+
+.score{
+    width: 480px;
+    height: 20px;
+    position:relative;
+    left: 10px;
+    background-color: black;
+    font-family: "pixel";
+    text-align: center;
+    font-size: 1pc;
+}
+
+.game-border{
+    width: 500px;
+    height: 730px;
+    left:700px;
+    top:50px;
+    position: absolute;
+    background-color: transparent;
+    z-index: +3;
+    outline-style: solid;
+    outline-width: 10px;
+    outline-color: white;
+}
+
+.submitScore{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    left: 1300px;
+    top: 50px;
+    z-index: +3;
+    background-color: black;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 10px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    position: relative;
+    top: 75px;
+    left: -45px;
+    font-family: 'pixel';
+    font-size: 2pc;
+    background-color: white;
+}
+
+input{
+    width: 225px;
+    height: 50px;
+    position: relative;
+    top: 25px;
+    left: 150px;
+    font-family: 'pixel';
+    font-size: 2pc;
+    text-align: center;
+}
